@@ -108,6 +108,7 @@ label,
 
 .btns {
     align-self: flex-end;
+    padding-right: .5%;
 }
 
 .nav-btn {
