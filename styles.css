@@ -103,3 +103,57 @@ label,
 .new-cocktail {
     padding-right: 2%;
 }
+
+
+/* media queries */
+@media screen and (max-width: 900px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: 0.5fr 1.6fr 1.6fr 0.3fr;
+        grid-template-areas:
+            "nav nav nav"
+            "card1 card2 card3" 
+            "card4 card5 card6"
+            "card7 card8 card9"
+            "foot foot foot";
+        grid-gap: 1%;
+    }
+}
+/* second at 600px 2 columns*/
+@media screen and (max-width: 700px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: 0.5fr 1.3fr 1.3fr 1.3fr 1.3fr 0.3fr;
+        grid-template-areas:
+            "nav nav"
+            "card1 card2" 
+            "card3 card4"
+            "card5 card6"
+            "card7 card8"
+            "foot foot";
+        grid-gap: 1%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1.15fr 1.15fr 1.15fr 1.15fr 1.15fr 1.15fr 1.15fr 1.15fr 0.3fr;
+        grid-template-areas:
+            "nav"
+            "card1"
+            "card2" 
+            "card3"
+            "card4" 
+            "card5" 
+            "card6"
+            "card7" 
+            "card8"
+            "foot";
+        grid-gap: 1%;
+    }
+}
+/* third at 400px? switch to flex?*/
