@@ -89,6 +89,13 @@ p {
     margin: 2%;
 }
 
+.make-it {
+    background: transparent;
+    border-radius: 10%;
+    border: 1pt solid gold;
+    margin: 5%;
+}
+
 .request {
     border-radius: 10%;
     background: transparent;
@@ -120,7 +127,6 @@ label,
     transform: translate(1.5);
 }
 
-/* media queries */
 @media screen and (max-width: 900px) {
     .container {
         display: grid;
@@ -135,7 +141,7 @@ label,
         grid-gap: 1%;
     }
 }
-/* second at 600px 2 columns*/
+
 @media screen and (max-width: 700px) {
     .container {
         display: grid;
@@ -171,4 +177,3 @@ label,
         grid-gap: 1%;
     }
 }
-/* third at 400px? switch to flex?*/
