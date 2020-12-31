@@ -18,6 +18,8 @@ nav {
     background-color: #87281F;
     grid-area: nav;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
@@ -104,6 +106,18 @@ label,
     padding-right: 2%;
 }
 
+.btns {
+    align-self: flex-end;
+}
+
+.nav-btn {
+    border: none;
+    background: transparent;
+}
+
+.nav-btn:hover {
+    transform: translate(1.5);
+}
 
 /* media queries */
 @media screen and (max-width: 900px) {
